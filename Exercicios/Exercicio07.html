@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<h1>Exercicio07</h1>
+<script>
+    var time1 = prompt('Qual o nome do primeiro time:')
+    var golsTime1 = parseInt(prompt(`Quantos gols o ${time1} fez:`))
+    var time2 = prompt('Qual o nome do segundo time:')
+    var golsTime2 = parseInt(prompt(`Quantos gols o ${time2} fez:`))
+
+    if (golsTime1 > golsTime2){
+        document.write(`O ${time1} Venceu!!! `)
+    }
+    else if (golsTime2 > golsTime1){
+        document.write(`O ${time2} Venceu!!! `)
+    }
+    else {
+        document.write(`Os times empataram!!!`)
+    }
+</script>

@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<h1>Exercicio10</h1>
+<script src="js/formataMoeda.js"></script>
+<script src="js/pegaNumero.js"></script>
+<script src="js/mostra.js"></script>
+<script>
+    var saldoAtual = pegaNumero(`Digite seu saldo atual:`)
+    var valorDebito = pegaNumero(`Digite o valor do debito:`)
+    var valorCredito = pegaNumero(`Digite o valor do Credito:`)
+    
+    var novoSaldo = (saldoAtual - valorDebito) + valorCredito
+    
+
+    if (novoSaldo > 0){
+        mostra(formataMoeda(novoSaldo) + '<br>')
+        mostra(`SALDO POSITIVO!!!`)
+    }
+    else{
+        mostra(formataMoeda(novoSaldo) + '<br>')
+        mostra(`SALDO NEGATIVO!!!`)
+    }
+
+</script>

@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<h1>Estoque</h1>
+<script src="js/mostra.js"></script>
+<script>
+    var qtdAtual = parseInt(prompt(`Quantidade de estoque atual:`))
+    var qtdMaxima = parseInt(prompt(`Qual a quantidade Maxima`))
+    var qtdMinima = parseInt(prompt(`Qual a quantidade Minima`))
+
+    var qtdMedia = (qtdMaxima + qtdMinima) / 2
+
+    document.write(
+        `a quantidade atual é : ${qtdAtual} <br>
+        a Media é : ${qtdMedia}  
+    <hr>`)
+
+    if (qtdAtual >= qtdMedia){
+        mostra('Não efetuar compra!')
+
+    }
+    else{
+        mostra('Efetue a compra!')
+    }
+
+
+</script>

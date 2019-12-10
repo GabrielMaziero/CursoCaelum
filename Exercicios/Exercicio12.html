@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<h1>Exercicio12</h1>
+<script>
+
+    var nome = prompt("Informe seu nome:")
+    var anoNasc = parseInt(prompt("Informe o ano de nascimento:"))
+    var anoTrabalho = parseInt(prompt("Informe o ano em que começou a trabalha:"))
+    var anoAtual = new Date().getFullYear()
+
+    var idade = anoAtual - anoNasc
+    var tempoTrabalho = anoAtual - anoTrabalho
+
+    if (idade >= 65 || tempoTrabalho >= 30){
+        document.write(`Nome: ${nome}<br>
+        REQUER APOSENTADORIA.
+        `)
+    }
+    else{
+        document.write(`Nome: ${nome}<br>
+        NÃO REQUER APOSENTADORIA.
+        `)
+    }
+
+</script>

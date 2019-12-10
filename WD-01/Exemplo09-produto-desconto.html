@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<h1>Desconto de produto </h1>
+<script>
+    var nomeProduto = prompt(`Digite o nome do produto: `)
+    var preco = parseFloat(prompt(`Digite o preço do produto: `).replace(',','.'))
+    var desconto = parseFloat(prompt(`Digite o desconto do produto: `).replace(',','.'))
+    var valorDesconto = preco - desconto
+
+    document.write(`
+        Produto: ${nomeProduto}<br>
+        Preço: R$ ${preco.toFixed(2).replace('.',',')}<br>
+        Valor do Desconto: R$ ${desconto.toFixed(2).replace('.',',')}<br>
+        Preço com desconto Aplicado: R$ ${valorDesconto.toFixed(2).replace('.',',')}<br>
+    `)
+
+</script>

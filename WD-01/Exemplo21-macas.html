@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<h1></h1>
+<script src="js/formataMoeda.js"></script>
+<script>
+    var qtdMacas = parseInt(prompt(`Quantas maças você deseja:`).replace(',','.'))
+
+    if (qtdMacas < 12){
+        var total = qtdMacas * 1.30
+        document.write(`Sua compra foi de: ${formataMoeda(total)}`)
+    }
+    else{
+        var total = qtdMacas * 1.00
+        document.write(`Sua compra foi de: ${formataMoeda(total)}`)
+    }
+
+
+</script>

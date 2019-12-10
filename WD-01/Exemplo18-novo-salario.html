@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<h1>Novo Salario</h1>
+<button onclick="reajusteSalario()">Reajuste de Salario</button>
+<script src="js/pegaNumero.js"></script>
+<script src="js/formataMoeda.js"></script>
+<script>
+    function reajusteSalario(){
+        var salarioAntigo = pegaNumero(`Informe seu salario antigo:`)
+        var porcentagem = pegaNumero(`Informe a porcentagem de reajuste:`)
+        var salarioNovo = salarioAntigo + (salarioAntigo * (porcentagem / 100))
+
+        document.write(`
+            Salario antigo: ${formataMoeda(salarioAntigo)} <br>
+            Percentual de Reajuste: ${porcentagem.toFixed(1).replace('.',',')}%<br>
+            Seu salario Novo é: ${formataMoeda(salarioNovo)}        
+        `)
+    }
+</script>

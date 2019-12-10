@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<h1>Converter em moeda</h1>
+<script>
+    /* A função com retorno é aquela que processa uma informação e 
+    devolve o resultado desse processamento para ser armazenado ou usado
+    em diferentes contextos.
+
+    Dica:
+        Gerealmente, funções com retorno SEMPRE são executadas
+        na frente de uma variável OU dentro de outras funções.
+
+    NÃO ESQUECER:
+        O return é sempre o ultimo comando dentro da função.
+    */
+
+    function converterMoeda(valor){
+        var moeda = parseFloat(valor).toFixed(2).replace(',','.')
+        return `R$ ${moeda}`
+    }
+    var numero = prompt(`Informe um numero:`).replace(',','.')
+    document.write(converterMoeda(numero))
+
+</script>

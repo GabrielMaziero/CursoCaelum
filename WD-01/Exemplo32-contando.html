@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<h1>Contando</h1>
+<script src="js/mostra.js"></script>
+<script>
+
+    var numero = prompt('Digite um numero:')
+
+    while(numero <= 0){
+        numero = prompt('Informe um numero maior que zero:')
+    }
+
+    mostra('Contando...<br>')
+    for(var i = 0;i <= numero; i++){
+    
+        mostra(i+'...')
+    
+}
+mostra('FIM!!!')
+</script>

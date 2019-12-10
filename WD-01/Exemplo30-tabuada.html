@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<h1>Tabuada</h1>
+Número:<br>
+<input type="text" id="campoNumero">
+<button onclick="calcular()">Calcular</button>
+<hr>
+<p id="exibeTabuada">
+    Sua tabuada será exibida aqui!
+</p>
+<script>
+    function calcular() {
+        var numero = campoNumero.value
+        exibeTabuada.innerHTML = ''
+
+        for (var m = 1; m <= 10; m++) //contador tbm pode usar += x(numero que deseja)
+        {
+            var resultado = numero * m
+            exibeTabuada.innerHTML += `${numero} x ${m} = ${resultado} <br>`
+        }
+
+    }
+    campoNumero.focus()
+
+
+</script>

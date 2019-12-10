@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<h1>calcular media do aluno</h1>
+<button onclick="calcularMediaFinal()">Calcular Media</button>
+<script src="js/pegaNumero.js"></script>
+<script>
+    function calcularMediaFinal(){
+        var nomeAluno = prompt(`Informe o nome do aluno(a):`)
+        var nota1 = pegaNumero('Informa a primeira nota:')
+        var nota2 = pegaNumero('Informa a segunda nota:')
+        var nota3 = pegaNumero('Informa a terceira nota:')
+        var mediaFinal = ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / 10
+
+        document.write(`
+            Nome do aluno: ${nomeAluno} <br>
+            Media final: ${mediaFinal.toFixed(1).replace('.',',')} 
+        `)
+    }
+</script>

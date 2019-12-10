@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<h1>acumuladores</h1>
+<script>
+
+    var acumulador = 0
+
+    if (confirm('Deseja informar um valor:') === true) {
+        var valor = prompt(`Digite um valor:`)
+        acumulador += valor
+       while(confirm('Deseja informar outro valor:') ===true){
+           valor = parseInt(prompt('Informe outro valor:'))
+           acumulador += valor
+       }
+    }
+
+    document.write(`Valor acumulado é ${acumulador}`)
+
+</script>

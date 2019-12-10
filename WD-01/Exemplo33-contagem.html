@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<h1>Contagem</h1>
+<script>
+    var numInicial = parseInt(prompt(`Informe o numero inicial:`))
+    var numFinal = parseInt(prompt(`Informe o numero Final:`))
+
+    document.write(`Contagem...<br>`)
+
+    while (numFinal < numInicial) {
+        numFinal = prompt(`Informe o numero Final novamente:`)
+    }
+    /* while (numInicial =='' || numFinal ==''){
+        numInicial = parseInt(prompt(`Deixou em branco, Informe o numero inicial:`))
+        numFinal =parseInt(prompt(`Deixou em branco, Informe o numero inicial:`))
+
+    }*/
+
+    for (i = numInicial; i <= numFinal; i++) {
+        document.write(i + ', ')
+    }
+
+</script>

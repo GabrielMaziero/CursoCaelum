@@ -1,0 +1,9 @@
+<meta charset="utf-8">
+<h1>Calcule seu IMC</h1>
+<script>
+    var altura = prompt('Digite sua altura: ').replace(',','.')
+    var peso = prompt('Digite seu peso: ').replace(',','.')
+    var imc = peso / altura**2
+
+    document.write(`Seu imc é :` + imc.toFixed(1))
+</script>

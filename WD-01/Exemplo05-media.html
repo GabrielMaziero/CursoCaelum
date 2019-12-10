@@ -1,0 +1,11 @@
+<meta charset="utf-8">
+<h1>Media das Idades</h1>
+<script>
+    var ano_atual = new Date().getFullYear()
+    var idade_J = ano_atual - 1993
+    var idade_M = ano_atual - 1997
+    var idade_R = ano_atual - 1985
+    var media = (idade_J + idade_M + idade_R) /3
+
+    document.write(`A media de idade é ${media.toFixed(1)}`)
+</script>

@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<h1>Exercicio09</h1>
+<button onclick="adicionarLista()">Adicionar Nome na Lista</button>
+<hr>
+<p id="listaConvidados">Lista dos Convidados</p>
+<script>
+    var lista = []
+
+    function adicionarLista(){
+        var nomeConvidado = prompt("Digite o nome do convidado:")
+        lista.push(nomeConvidado)
+
+        listaConvidados.innerHTML = `Lista dos Convidados <br> ${lista.join(`<br>`)}`
+
+    }
+</script>

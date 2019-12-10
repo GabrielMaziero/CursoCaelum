@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<h1>Confeitaria - Função com Parâmetro</h1>
+
+<button onclick="fazerBolo('Chocolate',3,8)"> Bolo de Chocolate</button><br>
+<button onclick="fazerBolo('Laranja',5,1)"> Bolo de Laranja</button><br>
+<button onclick="fazerBolo('Fubá',)"> Bolo de Fubá</button>
+
+<script>
+
+    function fazerBolo(sabor = 'Morango', qtdOvos = 1, coposLeite = 2) {
+        document.write(`Aqui esta seu bolo de ${sabor}, com ${qtdOvos} ovo(s) e 
+        ${coposLeite} copos de leite        
+        ...<br>`)
+    }
+</script>

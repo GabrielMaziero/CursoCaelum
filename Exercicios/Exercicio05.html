@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<h1>Exercicio05</h1>
+Nota 1 <br> 
+<input type="text" id="campoNota1">
+<br>
+Nota 2 <br>
+<input type="text" id="campoNota2">
+<br>
+Nota 3 <br>
+<input type="text" id="campoNota3">
+<br>
+<button onclick="calcularNota()">Calcular</button>
+<script src="js/mostra.js"></script>
+<script>
+
+    function calcularNota(){
+
+    var nota1 = campoNota1.value
+    var nota2 = campoNota2.value
+    var nota3 = campoNota3.value
+    var notaFinal = ((nota1*2) + (nota2*3) + (nota3*5)) / 10
+
+    mostra(`Sua média final é ${notaFinal} `)
+    }
+
+
+</script>

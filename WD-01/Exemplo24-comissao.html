@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<h1>Comissão</h1>
+<script src="js/pegaNumero.js"></script>
+<script src="js/formataMoeda.js"></script>
+<script>
+    var salarioFixo = pegaNumero(`Salario Fixo:`)
+    var totalVendas = pegaNumero(`Total de vendas:`)
+
+    if (totalVendas <= 1500){
+        var comissao = totalVendas * 0.03
+        var salarioTotal = comissao + salarioFixo
+        document.write(`O seu salario é ${formataMoeda(salarioTotal)}`)
+    }
+    else{
+        var comissao1 = 1500 * 0.03
+        var comissao2 = (totalVendas - 1500) * 0.05
+        var salarioTotal = comissao1 + comissao2 + salarioFixo
+        document.write(`O seu salario é ${formataMoeda(salarioTotal)}`)
+    }
+
+</script>

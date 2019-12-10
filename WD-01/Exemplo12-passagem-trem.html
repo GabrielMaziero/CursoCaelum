@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<h1>Passagem trem</h1>
+<script>
+    var valorUnitario = parseFloat(prompt(`Digite o valor da passagem:`).replace(',','.'))
+    var valorDia = valorUnitario * 2
+    var gastoMensal = valorDia * 30
+
+    document.write(`
+        Valor Unitario da passagem: R$ ${valorUnitario.toFixed(2).replace('.',',')} <br>
+        Gasto por dia: R$ ${valorDia.toFixed(2).replace('.',',')} <br>
+        Gasto por Mês: R$ ${gastoMensal.toFixed(2).replace('.',',')}
+    `)
+
+</script>

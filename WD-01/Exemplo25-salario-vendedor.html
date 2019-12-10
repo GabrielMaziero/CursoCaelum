@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<h1>Salario vendedor</h1>
+<script src="js/pegaNumero.js"></script>
+<script src="js/formataMoeda.js"></script>
+<script>
+    var salarioFixo = pegaNumero(`Qual seu salario fixo:`)
+    var qtdCarros = parseInt(prompt(`Quantos carros foram vendidos:`))
+    var totalVendas = pegaNumero(`Qual o total de vendas:`)
+    var comissaoFixa = pegaNumero(`Qual a comissão por carro:`)
+
+    var comissao1 = totalVendas * 0.05
+    var comissao2 = comissaoFixa * qtdCarros
+    var salarioFinal = salarioFixo + comissao1 + comissao2
+
+    document.write(`Seu salario é ${formataMoeda(salarioFinal)}`)
+</script>

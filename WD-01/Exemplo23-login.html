@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<h1>Login</h1>
+<br>
+Usuário: <input type="text" id="campoNome">
+<br><br>
+
+Senha: <input type="password" id="campoPass">
+<br><br>
+
+<button onclick="acessar()">Acessar</button>
+<br><br>
+
+<hr>
+<script src="js/mostra.js"></script>
+<script>
+    function acessar(){
+        var usuario = campoNome.value
+        var senha = campoPass.value
+
+        if (usuario == 'caelum' && senha =='wd01'){
+            mostra ('Login realizado com sucesso!')
+            
+        }
+        else{
+        alert('Dados inválidos, tente novamente!')
+    }
+        campoNome.value = ''
+        campoPass.value = ''
+        campoNome.focus()
+    }
+
+</script>

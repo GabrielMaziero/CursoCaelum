@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<h1>Custo do veiculo</h1>
+<button onclick="calcularVeiculo()">Calcular Custo do Veiculo</button>
+<script src="js/formataMoeda.js"></script>
+<script src="js/pegaNumero.js"></script>
+<script>
+    function calcularVeiculo(){
+        var custoFabrica = pegaNumero(`Qual o custo de fabrica:`)
+        var custoDistribuidor = custoFabrica * 0.28
+        var custoImpostos = custoFabrica * 0.45
+        var custoFinal = custoFabrica + custoDistribuidor + custoImpostos
+
+        document.write(`
+            Custo de Fabrica: ${formataMoeda(custoFabrica)} <br>
+            Custo do Distribuidor: ${formataMoeda(custoDistribuidor)} <br>
+            Custo dos Impostos: ${formataMoeda(custoImpostos)} <br>
+            Custo Final do veiculo: ${formataMoeda(custoFinal)}
+        
+        
+        `)
+    }
+
+
+</script>

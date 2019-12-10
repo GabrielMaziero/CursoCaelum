@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<h1>Todas as copas do mundo</h1>
+<script src="js/mostra.js"></script>
+<script src="https://rawgit.com/caelum/projeto01/copaDoMundo/apostilaIgnore/pegaPaisCopa.js"></script>
+<script>
+
+    var anoAtual = new Date().getFullYear()
+    for (var anoCopa = 1930; anoCopa <= anoAtual; anoCopa += 4){
+        var pais = pegaPaisCopa(anoCopa)
+    mostra(`${anoCopa} - ${pais}`)
+    }
+
+</script>

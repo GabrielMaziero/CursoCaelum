@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<h1>Impares e Pares</h1>
+<script>
+    var impares = 0
+    var pares = 0
+
+    for (var i = 1; i <= 6; i++) {
+        var numero = prompt(`Informe um valor:`)
+
+        if (numero % 2 == 0) {
+            //é par
+            pares++
+        }
+        else {
+            //é impar
+            impares++
+        }
+    }
+
+    document.write(`Pares: ${pares} / Impares: ${impares}`)
+</script>

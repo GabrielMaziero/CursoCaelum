@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<h1>Buscar Endereço</h1>
+
+CEP:
+<input type="text" id="campoCep"><br>
+Numero: <input type="text" id="campoNum" size="2" maxlength="3"><br>
+<button onclick="mostrarEndereco()">
+    Buscar
+</button>
+<p id="exibirEndereco">
+    Seu Endereço sera exibido aqui!
+</p>
+<script src="js/buscaCep.js"></script>
+<script src="https://unpkg.com/vanilla-masker@1.1.1/build/vanilla-masker.min.js"></script>
+<script>
+    VMasker(campoCep).maskPattern('99999-999')
+    function mostrarEndereco() {
+        var cep = campoCep.value.replace('-', '')
+        var numero = campoNum.value
+        var infosEndereco = buscaCep(cep)
+        //console.table(infosEndereco)
+        exibirEndereco.innerHTML = 
+        `
+            <b>Endereço:</b> ${infosEndereco[0]}, ${numero}<br>
+            <b>Bairro:</b> ${infosEndereco[1]}<br>
+            <b>Cidade:</b> ${infosEndereco[2]}<br>
+            <b>Estado:</b> ${infosEndereco[3]}<br>
+        
+        `
+    }
+
+
+</script>

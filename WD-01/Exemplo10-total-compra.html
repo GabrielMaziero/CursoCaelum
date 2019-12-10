@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<h1>Total compra</h1>
+<script>
+    var produto = prompt(`Digite o nome do produto: `)
+    var preco_Un = parseFloat(prompt(`Digite o valor do produto: `).replace(',','.'))
+    var quantidade = parseInt(prompt(`Digite a quantidade que deseja: `))
+    var total = preco_Un * quantidade
+
+    document.write(`
+        Produto: ${produto} <br>
+        Preço Unitario: R$ ${preco_Un.toFixed(2).replace('.',',')} <br>
+        Quantidade: ${quantidade} <br>
+        Total da compra: R$ ${total.toFixed(2).replace('.',',')}
+    `) 
+</script>
