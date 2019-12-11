@@ -1,38 +1,52 @@
-<meta charset="utf-8">
-<h1>Exercicio03</h1>
-<p>Escolha um botão</p>
-<button onclick="calcularTriangulo()">Calcular Área do Triângulo</button>
-<hr>
-<button onclick="calcularRetangulo()">Calcular Área do Retângulo</button>
-<hr>
-<button onclick="calcularCirculo()">Calcular Área do Circulo</button>
-<script src="js/mostra.js"></script>
-<script>
+<!DOCTYPE html>
+<html>
+    
+    <meta charset="utf-8">
+    <h1>Exercicio03</h1>
+    <body>
+        <p>Escolha um botão</p>
+        <button onclick="calcularTriangulo()">Calcular Área do Triângulo</button>
 
-    function calcularTriangulo(){
-        var base = parseFloat(prompt('Digite a base do triangulo: ').replace(',','.'))
-        var altura = parseFloat(prompt('Digite a altura do tiangulo: ').replace(',','.'))
-        var triangulo = (base * altura) / 2
+        <button onclick="calcularRetangulo()">Calcular Área do Retângulo</button>
 
-        mostra(`<br>A area do Triângulo é: ${triangulo} cm2 `)
-    }
+        <button onclick="calcularCirculo()">Calcular Área do Circulo</button>
 
-    function calcularRetangulo(){
-        var base = parseFloat(prompt('Digite a base do retangulo: ').replace(',','.'))
-        var altura = parseFloat(prompt('Digite a altura do retangulo: ').replace(',','.'))
-        var retangulo = base * altura
+        <script src="js/mostra.js"></script>
 
-        mostra(`<br>A area do retangulo é: ${retangulo} cm2`)
-    }
-
-    function calcularCirculo(){
-        var comprimento = parseFloat(prompt('Digite a diametro do circulo:').replace(',','.'))
-        var raio = comprimento / 2
-        var circulo = 3.1415926535898 * (raio**2)
-
-        mostra(`<br>A area do circulo é: ${circulo.toFixed(2)} cm2`)
-
-    }
-
-
-</script>
+        <script>
+        
+            // Uma forma resumida e chamando a funcçao para o querySelector
+            /*var button = document.querySelector("button.botao")
+        
+            button.onclick =  function calcularTriangulo(){ */
+        
+            function calcularTriangulo(){
+                var base = parseFloat(prompt('Digite a base do triangulo: ').replace(',','.'))
+                var altura = parseFloat(prompt('Digite a altura do tiangulo: ').replace(',','.'))
+                var triangulo = (base * altura) / 2
+        
+                mostra(`<br>A area do Triângulo é: ${triangulo} cm2 `)
+            }
+        
+            function calcularRetangulo(){
+                var base = parseFloat(prompt('Digite a base do retangulo: ').replace(',','.'))
+                var altura = parseFloat(prompt('Digite a altura do retangulo: ').replace(',','.'))
+                var retangulo = base * altura
+        
+                mostra(`<br>A area do retangulo é: ${retangulo} cm2`)
+            }
+        
+            function calcularCirculo(){
+                var comprimento = parseFloat(prompt('Digite a diametro do circulo:').replace(',','.'))
+                var raio = comprimento / 2
+                var circulo = 3.1415926535898 * (raio**2)
+        
+                mostra(`<br>A area do circulo é: ${circulo.toFixed(2)} cm2`)
+        
+            }
+        
+        
+        </script>
+    
+    </body>
+</html>
